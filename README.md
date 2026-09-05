@@ -45,7 +45,9 @@ Baixe o `.zip` da [última Release](../../releases/latest).
 
 - **Claude (claude.ai):** Configurações → Capacidades → Skills → upload do `.zip` **sem descompactar**.
 - **ChatGPT:** Configurações → Habilidades (`chatgpt.com/admin/skills`) → **+** → arraste o `.zip`. Sem acesso à administração? Crie um Projeto, envie os arquivos e instrua: *"Siga o SKILL.md que está nos arquivos deste projeto."*
-- **Claude Code · Codex CLI · Cursor:** descompacte e copie a pasta `rdd-detecta-invasao/` para `~/.claude/skills/` (ou `.claude/skills/` dentro de um projeto).
+- **Claude Code:** `npx skills add robertodiasduarte/rdd-detecta-invasao -a claude-code -y` (instala em `.claude/skills/` do projeto; com `-g`, em `~/.claude/skills/`).
+- **Codex:** `npx skills add robertodiasduarte/rdd-detecta-invasao -a codex -y` (instala em `.agents/skills/` do projeto; com `-g`, em `~/.codex/skills/`).
+- **Cursor, Kimi e outros:** mesmo comando com o nome do agente em `-a`. Sem Node.js, descompacte o `.zip` e copie a pasta `rdd-detecta-invasao/` para o diretório de skills do seu agente.
 
 Depois acione pelo nome: *"Use a skill rdd-detecta-invasao. Quero verificar se há acesso estranho nos meus sistemas."*
 
@@ -120,7 +122,9 @@ Download the `.zip` from the [latest Release](../../releases/latest).
 
 - **Claude (claude.ai):** Settings → Capabilities → Skills → upload the `.zip` **without unzipping**.
 - **ChatGPT:** Settings → Skills (`chatgpt.com/admin/skills`) → **+** → drop the `.zip` in.
-- **Claude Code · Codex CLI · Cursor:** unzip and copy `rdd-detecta-invasao/` into `~/.claude/skills/` (or a project's `.claude/skills/`).
+- **Claude Code:** `npx skills add robertodiasduarte/rdd-detecta-invasao -a claude-code -y` (project's `.claude/skills/`; `-g` for `~/.claude/skills/`).
+- **Codex:** `npx skills add robertodiasduarte/rdd-detecta-invasao -a codex -y` (project's `.agents/skills/`; `-g` for `~/.codex/skills/`).
+- **Cursor, Kimi and others:** same command with your agent's name in `-a`. Without Node.js, unzip and copy `rdd-detecta-invasao/` into your agent's skills directory.
 
 ## Sister skill
 

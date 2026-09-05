@@ -1,0 +1,3 @@
+interface:
+  display_name: "RDD Detecta Invasão"
+  short_description: "Verifica se alguém está operando as suas contas — os 5 sinais de acesso automatizado."
